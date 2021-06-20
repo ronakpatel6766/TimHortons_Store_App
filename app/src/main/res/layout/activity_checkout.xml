@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Checkout">
+
+    <TextView
+        android:id="@+id/txtCheckout"
+        android:layout_width="247dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="27dp"
+        android:text="Confirm Your Order Details."
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/Checkoutimage"
+        app:layout_constraintStart_toStartOf="@+id/Checkoutimage"
+        app:layout_constraintTop_toBottomOf="@+id/txtCheckoutimage" />
+
+    <ImageView
+        android:id="@+id/Checkoutimage"
+        android:layout_width="195dp"
+        android:layout_height="124dp"
+        android:layout_marginBottom="1dp"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/txtCheckoutName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCheckoutimage"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtCheckoutName"
+        android:layout_width="316dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginEnd="44dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCheckoutquantity"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Checkoutimage" />
+
+    <ImageView
+        android:id="@+id/txtCheckoutimage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/Checkoutimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/txtCheckoutquantity"
+        android:layout_width="301dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#0B0B0B"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCusName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCheckoutName" />
+
+    <Button
+        android:id="@+id/btncheckout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="49dp"
+        android:text="Place Order"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtExpiryDate" />
+
+    <EditText
+        android:id="@+id/txtCardNumber"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Enter Card Number"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtExpiryDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmail" />
+
+    <EditText
+        android:id="@+id/txtExpiryDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Enter Expiry Date "
+        android:inputType="date"
+        app:layout_constraintBottom_toTopOf="@+id/btncheckout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCardNumber" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="309dp"
+        android:layout_height="59dp"
+        android:layout_marginEnd="55dp"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Enter Email id "
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/txtCardNumber"
+        app:layout_constraintEnd_toEndOf="@+id/txtCardNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtCardNumber"
+        app:layout_constraintTop_toBottomOf="@+id/txtCusName" />
+
+    <EditText
+        android:id="@+id/txtCusName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="55dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="6dp"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Enter Your Name "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/txtEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtCheckoutquantity" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

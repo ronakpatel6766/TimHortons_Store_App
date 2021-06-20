@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "989716839748",
+    "project_id": "timhortons-309b0",
+    "storage_bucket": "timhortons-309b0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989716839748:android:1412ebe5f99ff82ebfeb11",
+        "android_client_info": {
+          "package_name": "com.example.timhortons"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989716839748-c0u4ddplbs99hq7m2kn9d51pluprc2lu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIG1L-wnVPJw_xvEPxYFA2kaZeAGE9qTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "989716839748-c0u4ddplbs99hq7m2kn9d51pluprc2lu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
